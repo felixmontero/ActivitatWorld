@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 public class AnnotationWebAppinitializer implements WebApplicationInitializer {
+    @Override
     public void onStartup(ServletContext container) throws ServletException {
         AnnotationConfigWebApplicationContext context =
                 new AnnotationConfigWebApplicationContext();

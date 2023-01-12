@@ -7,5 +7,6 @@ import java.util.List;
 public interface CountryDAO {
 
     void delete(Country country);
-    List<Country> obtain(Country country);
+    List<Country> obtain();
+
 }
