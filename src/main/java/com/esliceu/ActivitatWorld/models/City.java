@@ -3,7 +3,11 @@ package com.esliceu.ActivitatWorld.models;
 public class City {
 
     private String countryCode;
-    private int id;
+    private String district;
+
+
+
+    private int population;
     private String name;
 
     public String getCountryCode() {
@@ -14,12 +18,12 @@ public class City {
         this.countryCode = countryCode;
     }
 
-    public int getId() {
-        return id;
+    public int getPopulation() {
+        return population;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPopulation(int population) {
+        this.population = population;
     }
 
     public String getName() {
@@ -30,6 +34,12 @@ public class City {
         this.name = name;
     }
 
+    public String getDistrict() {
+        return district;
+    }
 
+    public void setDistrict(String district) {
+        this.district = district;
+    }
 
 }

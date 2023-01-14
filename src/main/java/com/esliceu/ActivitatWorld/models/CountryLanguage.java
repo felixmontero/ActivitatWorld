@@ -4,6 +4,11 @@ public class CountryLanguage {
 
     private String countryCode;
     private String name;
+
+    public boolean isOficial() {
+        return oficial;
+    }
+
     private boolean oficial;
 
     public String getCountryCode() {
@@ -22,9 +27,7 @@ public class CountryLanguage {
         this.name = name;
     }
 
-    public boolean isOficial() {
-        return oficial;
-    }
+
 
     public void setOficial(boolean oficial) {
         this.oficial = oficial;

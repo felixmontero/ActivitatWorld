@@ -14,16 +14,17 @@ public class CityDAOImpl implements CityDAO{
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    private final RowMapper<City> countryMapper = (rs, rn) -> {
+    private final RowMapper<City> citiesMapper = (rs, rn) -> {
         City city = new City();
         city.setName(rs.getString("Name"));
-        city.setId(rs.getInt("Id"));
-        city.setCountryCode(rs.getString("CountryCode"));
+        //city.setId(rs.getInt("Id"));
+        city.setDistrict(rs.getString("District"));
+        city.setPopulation(rs.getInt("Population"));
         return city;
     };
 
     @Override
-    public List<City> obtainCities() {
-        return null;
+    public List<City> obtainCities(String code) {
+        return jdbcTemplate.query("SELECT Name, District, Population  FROM city WHERE CountryCode = (?)", citiesMapper, code);
     }
 }

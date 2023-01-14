@@ -26,7 +26,6 @@ public class CountryDAOImpl implements CountryDAO{
 
     @Override
     public List<Country> obtain() {
-        System.out.println("DINS OBTAIN");
         return jdbcTemplate.query("select Code,Name from country", countryMapper);
     }
 }
