@@ -29,14 +29,14 @@ public class AppController {
 
 
 
-    @GetMapping("/cities/{code}")
-    public String cities(@PathVariable String code, Model model){
-
+    @GetMapping("/cities/{code}/{name}")
+    public String cities(@PathVariable String code,@PathVariable String name, Model model){
 
         /*Country country = (Country) model.getAttribute("countries");
         String codee = country.getCode();
        */
         List<City> cities = myservice.allCities(code);
+        model.addAttribute("country",name);
         model.addAttribute("cities",cities);
         return "cities";
     }

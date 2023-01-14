@@ -28,7 +28,7 @@
         <tr>
           <td scope="row" class="table-light">${country.code}</td>
           <td scope="row" class="table-light">${country.name}</td>
-          <td scope="row" class="table-light"><a href="/cities/${country.code}">Cities</a></td>
+          <td scope="row" class="table-light"><a href="/cities/${country.code}/${country.name}">Cities</a></td>
           <td scope="row" class="table-light"><a href="/languages">Languages</a></td>
         </tr>
       </c:forEach>
