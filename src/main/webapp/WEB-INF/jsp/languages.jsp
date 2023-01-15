@@ -17,17 +17,19 @@
     <table  class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Population</th>
-        <th scope="col">District</th>
+        <th scope="col">Languages</th>
+        <th scope="col">OFICIAL Language</th>
+        <th scope="col">Percentage</th>
+        <th scope="col">Countries</th>
       </tr>
       </thead>
 
-      <c:forEach var="city" items="${cities}">
+      <c:forEach var="language" items="${languages}">
         <tr>
-          <td scope="row" class="table-light">${city.name}</td>
-          <td scope="row" class="table-light">${city.population}</td>
-          <td scope="row" class="table-light">${city.district}</td>
+          <td scope="row" class="table-light">${language.language}</td>
+          <td scope="row" class="table-light">${language.oficial}</td>
+          <td scope="row" class="table-light">${language.percentage}</td>
+          <td scope="row" class="table-light"><a href="/countries/${language.language}">country</a></td>
         </tr>
       </c:forEach>
 

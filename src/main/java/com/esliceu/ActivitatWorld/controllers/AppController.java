@@ -27,6 +27,13 @@ public class AppController {
         return "countries";
     }
 
+    @GetMapping("/countries/{language}")
+    public String countries(@PathVariable String language,Model model){
+        List<Country> countries = myservice.allCountriesByLanguage(language);
+
+        model.addAttribute("countries",countries);
+        return "countries";
+    }
 
 
     @GetMapping("/cities/{code}/{name}")
@@ -44,8 +51,9 @@ public class AppController {
     @RequestMapping("/languages/{code}/{name}")
     public String languages(@PathVariable String code,@PathVariable String name,Model model){
 
-        //List<CountryLanguage> countryLanguages = myservice.getCountryLanguage(code);
+        List<CountryLanguage> countryLanguages = myservice.getCountryLanguage(code);
         model.addAttribute("country",name);
+        model.addAttribute("languages",countryLanguages);
         return "languages";
     }
 }

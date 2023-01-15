@@ -9,4 +9,5 @@ public interface CountryDAO {
     void delete(Country country);
     List<Country> obtain();
 
+    List<Country> obtainByLanguage(String language);
 }

@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4375c5a4-b782-4596-a468-b0bf2d9d1d55" name="Changes" comment="PÁGINA DE CIUDADES TERMINADA (FALTA EL NAV)">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/languages.jsp" afterDir="false" />
+    <list default="true" id="4375c5a4-b782-4596-a468-b0bf2d9d1d55" name="Changes" comment="Languages VISTA (FALTA EL NAV)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/controllers/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryLanguageDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryLanguageDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/models/CountryLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/models/CountryLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/services/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/services/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/languages.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/languages.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673730702653</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Languages VISTA (FALTA EL NAV)">
+      <created>1673773334500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673773334500</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +147,7 @@
     <MESSAGE value="PROGRAMA ARREGLADO Y AÑADIENDO DAO CITY Y COUNTRY" />
     <MESSAGE value="PÁGINA DE CIUDADES FUNCIONAL" />
     <MESSAGE value="PÁGINA DE CIUDADES TERMINADA (FALTA EL NAV)" />
-    <option name="LAST_COMMIT_MESSAGE" value="PÁGINA DE CIUDADES TERMINADA (FALTA EL NAV)" />
+    <MESSAGE value="Languages VISTA (FALTA EL NAV)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Languages VISTA (FALTA EL NAV)" />
   </component>
 </project>

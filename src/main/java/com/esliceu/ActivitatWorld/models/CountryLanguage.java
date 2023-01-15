@@ -2,29 +2,27 @@ package com.esliceu.ActivitatWorld.models;
 
 public class CountryLanguage {
 
-    private String countryCode;
-    private String name;
+    private float percentage;
+    private String language;
+    private boolean oficial;
 
     public boolean isOficial() {
         return oficial;
     }
-
-    private boolean oficial;
-
-    public String getCountryCode() {
-        return countryCode;
+    public float getPercentage() {
+        return percentage;
     }
 
-    public void setCountryCode(String countryCode) {
-        this.countryCode = countryCode;
+    public void setPercentage(float percentage) {
+        this.percentage = this.percentage;
     }
 
-    public String getName() {
-        return name;
+    public String getLanguage() {
+        return language;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
 

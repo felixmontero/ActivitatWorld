@@ -18,7 +18,7 @@
     <thead class="thead-dark">
       <tr>
         <th scope="col">Code</th>
-        <th scope="col">Nom</th>
+        <th scope="col">Name</th>
         <th scope="col">Cities</th>
         <th scope="col">Languages</th>
       </tr>

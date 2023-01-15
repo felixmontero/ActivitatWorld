@@ -20,8 +20,8 @@ public class MyService {
     @Autowired
     CityDAO cityDAO;
 
-   /* @Autowired
-    CountryLanguageDAO countryLanguageDAO;*/
+    @Autowired
+    CountryLanguageDAO countryLanguageDAO;
 
     public List<Country> allCountries(){
         return countryDAO.obtain();
@@ -31,7 +31,11 @@ public class MyService {
         return cityDAO.obtainCities(code);
     }
 
-    /*public List<CountryLanguage> getCountryLanguage(String code){
+    public List<CountryLanguage> getCountryLanguage(String code){
         return countryLanguageDAO.obtainLanguages(code);
-    }*/
+    }
+
+    public List<Country> allCountriesByLanguage(String language) {
+        return countryDAO.obtainByLanguage(language);
+    }
 }
