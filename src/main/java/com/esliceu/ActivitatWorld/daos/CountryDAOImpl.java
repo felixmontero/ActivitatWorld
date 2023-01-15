@@ -20,7 +20,9 @@ public class CountryDAOImpl implements CountryDAO{
     };
 
     @Override
-    public void delete(Country country) {
+    public void delete(String code) {
+         jdbcTemplate.update("Delete from city where CountryCode=(?)",code);
+         jdbcTemplate.update("Delete from country where Code=(?)",code );
 
     }
 

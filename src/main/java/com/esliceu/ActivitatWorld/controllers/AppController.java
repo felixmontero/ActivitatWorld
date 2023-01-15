@@ -36,7 +36,14 @@ public class AppController {
         return "countries";
     }
 
+    @PostMapping("/countries/{language}/{code}")
+    public String countriesPost(@PathVariable String language,@PathVariable String code,Model model){
+        myservice.deleteCountriesByLanguage(code);
+        List<Country> countries = myservice.allCountriesByLanguage(language);
 
+        model.addAttribute("countries",countries);
+        return "countries";
+    }
     @GetMapping("/cities/{code}/{name}")
     public String cities(@PathVariable String code,@PathVariable String name, Model model){
 

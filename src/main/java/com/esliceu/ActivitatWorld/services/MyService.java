@@ -49,4 +49,8 @@ public class MyService {
     public void setCity(String nameCity, String district, Integer population, String code) {
         cityDAO.setCityDAO(nameCity, district, population, code);
     }
+
+    public void deleteCountriesByLanguage(String code) {
+        countryDAO.delete(code);
+    }
 }

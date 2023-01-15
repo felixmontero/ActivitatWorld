@@ -19,12 +19,6 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="/deleteCountry">Delete Country <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/newCity">New City</a>
-          </div>
-        </div>
       </nav>
    </header>
 
@@ -35,8 +29,8 @@
       <tr>
         <th scope="col">Languages</th>
         <th scope="col">OFICIAL Language</th>
-        <th scope="col">Percentage</th>
         <th scope="col">Countries</th>
+        <th scope="col">Delete Countries</th>
       </tr>
       </thead>
 
@@ -44,8 +38,14 @@
         <tr>
           <td scope="row" class="table-light">${language.language}</td>
           <td scope="row" class="table-light">${language.oficial}</td>
-          <td scope="row" class="table-light">${language.percentage}</td>
           <td scope="row" class="table-light"><a href="/countries/${language.language}">country</a></td>
+
+          <td scope="row" class="table-light">
+                      <form action="/countries/${language.language}/{code}" method="post">
+                          <input type="hidden" name="nameLanguage" id="nameLanguage" value="${language.language}">
+                          <input type="submit" value="Delete" class="btn btn-dark">
+                      </form>
+                  </td>
         </tr>
       </c:forEach>
 
