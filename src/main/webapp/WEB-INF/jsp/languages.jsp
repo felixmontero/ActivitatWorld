@@ -8,28 +8,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Països</title>
+    <title>Cities</title>
   </head>
 
   <body  style="background-image: url(https://wallpapers.com/images/hd/white-textured-paper-439vozmsl9bybc8a.jpg);">
-    <h1>Countries</h1>
+    <h1>Languages from ${country}</h1>
 
     <table  class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">Code</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Cities</th>
-        <th scope="col">Languages</th>
+        <th scope="col">Name</th>
+        <th scope="col">Population</th>
+        <th scope="col">District</th>
       </tr>
       </thead>
 
-      <c:forEach var="country" items="${countries}">
+      <c:forEach var="city" items="${cities}">
         <tr>
-          <td scope="row" class="table-light">${country.code}</td>
-          <td scope="row" class="table-light">${country.name}</td>
-          <td scope="row" class="table-light"><a href="/cities/${country.code}/${country.name}">Cities</a></td>
-          <td scope="row" class="table-light"><a href="/languages/${country.code}/${country.name}">Languages</a></td>
+          <td scope="row" class="table-light">${city.name}</td>
+          <td scope="row" class="table-light">${city.population}</td>
+          <td scope="row" class="table-light">${city.district}</td>
         </tr>
       </c:forEach>
 

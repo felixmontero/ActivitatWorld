@@ -41,11 +41,11 @@ public class AppController {
         return "cities";
     }
 
-    /*@RequestMapping("/languages/{code}")
-    public String languages(@PathVariable String code,Model model){
+    @RequestMapping("/languages/{code}/{name}")
+    public String languages(@PathVariable String code,@PathVariable String name,Model model){
 
-        List<CountryLanguage> countryLanguages = myservice.getCountryLanguage(code);
-
+        //List<CountryLanguage> countryLanguages = myservice.getCountryLanguage(code);
+        model.addAttribute("country",name);
         return "languages";
-    }*/
+    }
 }
