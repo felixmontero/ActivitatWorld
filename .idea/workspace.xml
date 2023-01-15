@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4375c5a4-b782-4596-a468-b0bf2d9d1d55" name="Changes" comment="Languages VISTA (FALTA EL NAV)">
+    <list default="true" id="4375c5a4-b782-4596-a468-b0bf2d9d1d55" name="Changes" comment="TERMINAMOS LAS 3 VISTAS FALTAN LOS FORMULARIOS (FALTA EL NAV)">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/newCity.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/controllers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CityDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CityDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CityDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryLanguageDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/daos/CountryLanguageDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/models/CountryLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/models/CountryLanguage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/services/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/esliceu/ActivitatWorld/services/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cities.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cities.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/countries.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/languages.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/languages.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673773334500</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TERMINAMOS LAS 3 VISTAS FALTAN LOS FORMULARIOS (FALTA EL NAV)">
+      <created>1673776754745</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673776754745</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +158,7 @@
     <MESSAGE value="PÁGINA DE CIUDADES FUNCIONAL" />
     <MESSAGE value="PÁGINA DE CIUDADES TERMINADA (FALTA EL NAV)" />
     <MESSAGE value="Languages VISTA (FALTA EL NAV)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Languages VISTA (FALTA EL NAV)" />
+    <MESSAGE value="TERMINAMOS LAS 3 VISTAS FALTAN LOS FORMULARIOS (FALTA EL NAV)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TERMINAMOS LAS 3 VISTAS FALTAN LOS FORMULARIOS (FALTA EL NAV)" />
   </component>
 </project>

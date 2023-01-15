@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -43,10 +44,28 @@ public class AppController {
         String codee = country.getCode();
        */
         List<City> cities = myservice.allCities(code);
+        model.addAttribute("code",code);
         model.addAttribute("country",name);
         model.addAttribute("cities",cities);
         return "cities";
     }
+    @GetMapping("/newCity/{code}/{name}")
+    public String newCity(@PathVariable String code,@PathVariable String name, Model model){
+        List<City> cityDistricts =myservice.getDistricts(code);
+        model.addAttribute("code",code);
+        model.addAttribute("name",name);
+        model.addAttribute("districts", cityDistricts);
+        return "newCity";
+    }
+    @PostMapping("/newCity/{code}")
+    public String newCity(@PathVariable String code, Model model, HttpServletRequest req){
+        String nameCity = req.getParameter("nameCity");
+        String district = req.getParameter("district");
+        Integer population = Integer.parseInt(req.getParameter("population"));
+       myservice.setCity(nameCity,district,population,code);
+        return "newCity";
+    }
+
 
     @RequestMapping("/languages/{code}/{name}")
     public String languages(@PathVariable String code,@PathVariable String name,Model model){

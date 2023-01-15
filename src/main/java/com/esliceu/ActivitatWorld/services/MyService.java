@@ -30,6 +30,9 @@ public class MyService {
     public List<City> allCities(String code){
         return cityDAO.obtainCities(code);
     }
+    public void newCity(String code){
+        cityDAO.newCity(code);
+    }
 
     public List<CountryLanguage> getCountryLanguage(String code){
         return countryLanguageDAO.obtainLanguages(code);
@@ -37,5 +40,13 @@ public class MyService {
 
     public List<Country> allCountriesByLanguage(String language) {
         return countryDAO.obtainByLanguage(language);
+    }
+
+    public List<City> getDistricts(String code) {
+      return cityDAO.obtainDistrits(code);
+    }
+
+    public void setCity(String nameCity, String district, Integer population, String code) {
+        cityDAO.setCityDAO(nameCity, district, population, code);
     }
 }

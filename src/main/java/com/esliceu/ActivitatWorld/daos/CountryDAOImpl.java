@@ -33,4 +33,6 @@ public class CountryDAOImpl implements CountryDAO{
     public List<Country> obtainByLanguage(String language) {
         return jdbcTemplate.query("SELECT country.Name, country.Code FROM `country` INNER JOIN countrylanguage ON country.code = countrylanguage.CountryCode WHERE countrylanguage.Language = \"" + language + "\"", countryMapper);
     }
+
+
 }

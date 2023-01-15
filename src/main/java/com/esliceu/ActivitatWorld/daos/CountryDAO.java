@@ -10,4 +10,5 @@ public interface CountryDAO {
     List<Country> obtain();
 
     List<Country> obtainByLanguage(String language);
+
 }

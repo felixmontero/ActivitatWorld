@@ -12,6 +12,21 @@
   </head>
 
   <body  style="background-image: url(https://wallpapers.com/images/hd/white-textured-paper-439vozmsl9bybc8a.jpg);">
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="countries">Countries</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="deleteCountry">Delete Country <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="newCity">New City</a>
+            </div>
+          </div>
+        </nav>
+     </header>
+
     <h1>Countries</h1>
 
     <table  class="table">
@@ -21,6 +36,7 @@
         <th scope="col">Name</th>
         <th scope="col">Cities</th>
         <th scope="col">Languages</th>
+        <th scope="col">Create City</th>
       </tr>
       </thead>
 
@@ -30,6 +46,7 @@
           <td scope="row" class="table-light">${country.name}</td>
           <td scope="row" class="table-light"><a href="/cities/${country.code}/${country.name}">Cities</a></td>
           <td scope="row" class="table-light"><a href="/languages/${country.code}/${country.name}">Languages</a></td>
+          <td scope="row" class="table-light"><a href="/newCity/${country.code}/${country.name}">New City</a></td>
         </tr>
       </c:forEach>
 

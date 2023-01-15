@@ -1,7 +1,6 @@
 package com.esliceu.ActivitatWorld.daos;
 
 import com.esliceu.ActivitatWorld.models.City;
-import com.esliceu.ActivitatWorld.models.Country;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -26,5 +25,19 @@ public class CityDAOImpl implements CityDAO{
     @Override
     public List<City> obtainCities(String code) {
         return jdbcTemplate.query("SELECT Name, District, Population  FROM city WHERE CountryCode = (?)", citiesMapper, code);
+    }
+
+    @Override
+    public List<City> newCity(String code) {
+            return jdbcTemplate.query("select District from city", citiesMapper);
+    }
+    @Override
+    public List<City> obtainDistrits(String code) {
+        return jdbcTemplate.query("select Name, District, Population from city WHERE CountryCode = (?) and District != '-'", citiesMapper,code);
+    }
+
+    @Override
+    public void setCityDAO(String nameCity, String district, Integer population,String code) {
+        jdbcTemplate.update("insert into city (Name,District,Population,CountryCode) values (?,?,?,?)",nameCity,district,population,code);
     }
 }
